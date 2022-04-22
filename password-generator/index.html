@@ -1,19 +1,26 @@
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Karla:wght@800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <main>
-            <h1>Generate a <br> random password</h1>
-            <p>Never use an insecure password again</p>
-            <button>Generate passwords</button>
-            <div class="passwords">
-                <div id="passwordOne"></div>
-                <div id="passwordTwo"></div>
-                <div id="passwordThree"></div>
-                <div id="passwordFour"></div>
-            </div>
+            <div class="box">
+                <div class="inner-box">
+                    <h1>Generate a<br><span id="green-text">random password</span></h1>
+                    <p>Never use an insecure password again</p>
+                    <button onclick="printPwd()">Generate passwords</button>
+                    <div class="pwd-box">
+                        <div class="pwds" id="pwd-one"></div>
+                        <div class="pwds" id="pwd-two"></div>
+                        <div class="pwds" id="pwd-three"></div>
+                        <div class="pwds" id="pwd-four"></div>
+                    </div> <!-- passwords -->
+                </div> <!-- inner-box -->
+            </div> <!-- box -->
         </main>
-        <script src="index.pack.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>

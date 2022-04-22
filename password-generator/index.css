@@ -2,3 +2,74 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+main {
+    font-family: 'Inter', sans-serif;
+    background: #1C1C1C;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 550px;
+    height: 550px;
+    background: #1F2937;
+}
+
+.inner-box {
+    margin-top: 118px;
+    margin-left: 52px;
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#green-text {
+    color: #10B981;
+}
+
+p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #D5D4D8;
+    margin-top: 10px;
+    margin-bottom: 51px;
+}
+
+button {
+    color: #FFFFFF;
+    background: #10B981;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 9px;
+}
+.pwd-box {
+    color: #5DEF92;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.pwds {
+    width: 211px;
+    height: 39px;
+    line-height: 39px;
+    margin-top: 27px;
+    margin-right: 27px;
+    background: #273549;
+    border-radius: 4px;
+    ;
+}
