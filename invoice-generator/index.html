@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Invoice Generator</title>
+        <title>Invoice Creator</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Karla:wght@800&display=swap" rel="stylesheet">
     </head>
     <body>
-    <h1>Invoice Generator</h1>
-    <h2>Thanks for choosing GoodCorp, LLC!</h2>
-    <div id="buttons">
-        <button id="wash-car"> Wash Car: $10</button>
-        <button id="mow-lawn"> Mow Lawn: $20</button>
-        <button id="pull-weeds"> Pull Weeds: $10</button>
-    </div> <!-- buttons -->
-    <div id="task-header">
-        <h3>TASK</h3>
-        <h3>TOTAL</h3>
+    <div class="container">
+    <div class="header">
+        <h1>Invoice Creator</h1>
+        <h2>Thanks for choosing GoodCorp, LLC!</h2>
     </div>
-    <div id="task-info">
-        <ul id="task-ul"></ul>
-        <ul id="total-ul"></ul>
+    <div class="bottom">
+        <div class="buttons">
+            <button id="wash-car"> Wash Car: $10</button>
+            <button id="mow-lawn"> Mow Lawn: $20</button>
+            <button id="pull-weeds"> Pull Weeds: $10</button>
+        </div> <!-- buttons -->
+        <div class="task-header">
+            <p>TASK</p>
+            <p>TOTAL</p>
+        </div>
+        <div class="task-info">
+            <ul id="task-ul"></ul>
+            <ul id="total-ul"></ul>
+        </div>
+        <div class="line"></div>
+        <div class="notes-header">
+            <p>NOTES</p>
+            <p>TOTAL AMOUNT</p>
+        </div>
+        <div class="notes-info">
+            <p>We accept cash, credit card or Paypal</p>
+            <div id="total-amount"></div>
+        </div>
+        <button id="send-invoice">Send Invoice</button>
     </div>
-    <div id="notes-header">
-        <p>NOTES</p>
-        <p>TOTAL AMOUNT</p>
     </div>
-    <div id="notes-info">
-        <p>We accept cash, credit card or Paypal</p>
-        <div id="total-amount">TOTAL AMOUNT</h3>
-    </div>
-    <button id="send-invoice">Send Invoice</button>
     </body>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
 </html>
-

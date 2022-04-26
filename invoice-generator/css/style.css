@@ -1,0 +1,128 @@
+html, body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: auto 550px;
+    background: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    background: #3A69D2;
+    text-align: center;
+    padding: 59px 98px 51px 98px;    
+    color: #FFFFFF;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+h2 {
+    margin: 0;
+    margin top: 9px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bottom {
+    background-color: #2B283A;
+    padding: 41px 39px 49px 39px;
+    min-height: 380px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    color: #4A4E74;
+    font-size: 14px;
+    font-weight: 500;
+    background: #D1D4F4;
+    padding: 14.5px 14.5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 43px;
+    margin-bottom: 19px;
+}
+
+.task-header > p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #F5F5F5;
+    margin: 0;
+}
+
+ul {
+    color: #F5F5F5;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.task-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 29px;
+}
+
+.line {
+    border: solid 1px #C3C6DB;
+    width: 99.5%;
+}
+
+.notes-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
+}
+
+.notes-header > p{
+    font-size: 12px;
+    font-weight: bold;
+    color: #F5F5F5;
+    margin: 0;
+    margin-bottom: 11px;
+}
+
+.notes-info {
+    display: flex;
+    justify-content: space-between;
+    color: #F5F5F5;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+.notes-info > p {
+    margin: 0;
+}
+
+#total-amount {
+    font-size: 36px;
+}
+
+#send-invoice {
+    width: 100%;
+    margin-top: 50px;
+    color: #FFFFFF;
+    background: #3A69D2;
+    padding: 10px 0;
+    border: none;
+    border-radius: 3px;
+}
