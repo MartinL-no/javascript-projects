@@ -75,6 +75,13 @@ ul {
     list-style: none;
 }
 
+li > button {
+    font-size: 8px;
+    background: none;
+    border: none;
+    color: #D5D4D8;
+}
+
 .task-info {
     display: flex;
     justify-content: space-between;
