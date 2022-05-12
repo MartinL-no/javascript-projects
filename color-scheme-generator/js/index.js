@@ -28,14 +28,9 @@ fetch("https://www.thecolorapi.com/scheme?hex=116f50",)
         })
 
 function renderHex() {
-    const ul = document.getElementById("hex-ul")
-    ul.innerHTML = ""
-    for (let color of colorArray) {
-        let ul = document.getElementById("hex-ul")
-        console.log(ul)
-        const li = document.createElement("li")
-        li.appendChild(document.createTextNode(color))
-        ul.appendChild(li)        
+    for (const [i, value] of colorArray.entries()) {
+        const printHex = document.getElementById(`hex-${i}`)
+        printHex.textContent = value
         }
     }
 
@@ -45,3 +40,14 @@ function renderColor() {
         colorPatch.style.backgroundColor = value
         }
     }
+
+document.querySelectorAll('.copy').forEach(item => {
+    item.addEventListener('click', event => {
+        event.target.classList.add('animate__animated', 'animate__heartBeat')
+        event.target.addEventListener('animationend', () => {
+            event.target.classList.remove('animate__animated', 'animate__heartBeat')
+            navigator.clipboard.writeText(event.target.textContent)
+            alert("Color Copied!")
+        })
+    })
+  })
