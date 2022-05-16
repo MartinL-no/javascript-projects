@@ -44,6 +44,17 @@ p {
     margin-top: 0.75em;
 }
 
+.placeholder-icon {
+    font-size: 5rem;
+}
+
+.placeholder-text {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    color: #DFDDDD;
+}
+
 .my-watchlist {
     font-size: 0.875rem;
     font-weight: 700;
@@ -86,31 +97,18 @@ p {
 
 /* Layout */
 
-.container {
-    margin: 0 auto;
-    max-width: 550px;
-    min-height: 779px;
-}
-
 .header-bg {
-    background-color: grey;
+    background-color: rgba(0,0,0, .7);
     background-image: url(../img/header-bg.avif);
     background-repeat: no-repeat;
     background-size: 110%;
     background-position: -50px -180px;
     background-blend-mode: multiply;
 }
-
-.section-bg {
-    background: white;
-    padding-top: 3.5em;
-}
-
-.container-inner {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 90%;
+.container {
+    margin: 10% auto;
+    max-width: 550px;
+    min-height: 779px;
 }
 
 .container-title {
@@ -118,6 +116,34 @@ p {
     justify-content: space-between;
     align-items: baseline;
     margin-top: 4em;
+}
+
+.section-bg {
+    background: white;
+    overflow: scroll;
+    height: 41.5em;
+}
+
+.container-inner,
+.container-movies {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.container-movies {
+    height: inherit;
+}
+
+.container-placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:  20em;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .container-movie {
@@ -129,6 +155,9 @@ p {
     border-bottom: solid 1.5px #E5E7EB;
 }
 
+.container-movie:first-of-type {
+    margin-top: 3em;
+}
 
 .column-one {
     width: 25%;
@@ -145,7 +174,6 @@ form {
     margin-bottom: 0;
     position: relative;
     top: 1.2em;
-
 }
 
 button,
@@ -155,7 +183,6 @@ input {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     border: 1px solid #D1D5DB;
-
 }
 
 input {
