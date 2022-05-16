@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    background: black;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Typography */
+
+h1,
+h2,
+p,
+a {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.625rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 1.25em;
+}
+
+h2 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+p {
+    color: #6B7280;
+    margin-top: 0.75em;
+}
+
+.my-watchlist {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: FFFFFF;
+    text-decoration: none;
+}
+
+.movie-info,
+.ratings {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #111827;
+    text-decoration: none;
+}
+
+.ratings {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0.5em;
+}
+
+.runtime {
+    margin-right: 1em;
+}
+
+.watchlist {
+    margin-left: 1.5em;
+    border: none;
+    padding: 0.25em 0.5em;
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+}
+
+.watchlist:hover,
+.watchlist:hover {
+    background: grey;
+    color: white;
+}
+
+/* Layout */
+
+.container {
+    margin: 0 auto;
+    max-width: 550px;
+    min-height: 779px;
+}
+
+.header-bg {
+    background-color: grey;
+    background-image: url(../img/header-bg.avif);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: -50px -180px;
+    background-blend-mode: multiply;
+}
+
+.section-bg {
+    background: white;
+    padding-top: 3.5em;
+}
+
+.container-inner {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.container-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 4em;
+}
+
+.container-movie {
+    background-color: #FFFFFF;
+    display: flex;
+    height: 150px;
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+    border-bottom: solid 1.5px #E5E7EB;
+}
+
+
+.column-one {
+    width: 25%;
+}
+
+.column-two {
+    width: 75%;
+}
+
+/* Form */
+
+form {
+    display: flex;
+    margin-bottom: 0;
+    position: relative;
+    top: 1.2em;
+
+}
+
+button,
+input {
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: 1px solid #D1D5DB;
+
+}
+
+input {
+    width: 80%;
+    border-radius: 4px 0 0 4px;
+}
+
+.magnifying-icon {
+    background-image: url(../img/search.png);
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: 0.5em;
+    padding-left: 2.5em;
+}
+
+button {
+    width: 20%;
+    border-radius: 0 4px 4px 0;
+}

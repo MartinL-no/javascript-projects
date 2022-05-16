@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Movie Watchlist</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header-bg">
+                <div class="container-inner">
+                        <div class="container-title">
+                            <h1>Find Your Film</h1>
+                            <a href="my-watchlist.html" class="my-watchlist">My Watchlist</a>
+                        </div> <!-- container-title --> 
+                        <form id="search" action="/watchlist.html" method="post">
+                            <input name="movie-input" type="text" placeholder="Search for a movie" required class="magnifying-icon">
+                            <button type="submit">Search</button>
+                        </form>
+                </div> <!-- container-inner --> 
+            </div> <!-- header-bg -->   
+            <div class="section-bg">
+                <div class="container-inner">
+                    <section id="container-movies" class="container-movies">
+                    </section>
+                </div>
+            </div>
+        </div> <!-- container --> 
+        <script src="./js/index.js"></script>
+    </body>
+</html>
