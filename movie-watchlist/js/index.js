@@ -9,8 +9,11 @@ let watchlistArray = []
 
 window.onload = function() {
     if (window.location.href.indexOf('index.html') > -1) {
-        localStorage.setItem("array:", JSON.stringify(watchlistArray))
         fetchMovieList("western")
+        if (!localStorage.getItem("array:")){
+
+            localStorage.setItem("array:", JSON.stringify(watchlistArray))
+        }
     }   else if (localStorage.getItem("array:")) {
         watchlistArray = JSON.parse(localStorage.getItem("array:"))
         renderMovie(watchlistArray, containerWatchlist)
