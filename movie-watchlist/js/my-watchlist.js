@@ -66,5 +66,4 @@ containerWatchlist.addEventListener('click', function(e){
         watchlistLength.textContent = `(${watchlistArray.length})`
         renderMovie(watchlistArray, containerWatchlist)
     }
-    
  })
