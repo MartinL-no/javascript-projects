@@ -11,13 +11,13 @@
     <body>
         <div class="top">
             <h2>Metric/Imperial unit conversion</h2>
-            <h1 id="input">20</h1>
+            <input id="input" type="number" inputmode="numeric" oninput="calculate()" autofocus="autofocus">
+            <!-- <button onclick="calculate()">Calculate</button> -->
         </div> <!-- top -->
-
         <div class="bottom">
             <div class="units">
                 <h3>Length (Meters/Feet)</h3>
-                <span id="length">test</span>
+                <span id="length"></span>
             </div> <!-- units -->
             <div class="units">
                 <h3>Volume (Liters/Gallons)</h3>
@@ -28,7 +28,6 @@
                 <span id="mass"></span>
             </div> <!-- units -->
         </div> <!-- bottom -->
-        <!-- <button onclick="test()">test</button> -->
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
