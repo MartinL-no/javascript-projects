@@ -61,6 +61,28 @@ button {
     margin-right: 5px;
 }
 
+input {
+        color: #FFFFFF;
+        background: #10B981;
+        margin-left: 70px;
+        border: 0;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 9px;
+}
+
+::placeholder {
+    color: #FFFFFF;   
+    opacity: 1;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .pwd-box {
     color: #5DEF92;
     font-size: 16px;
