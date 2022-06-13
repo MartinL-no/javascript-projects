@@ -1,5 +1,5 @@
 # vanilla-js-projects
-This is a collection of projects that I built using vanilla Javascript
+A collection of projects I built using vanilla Javascript
 
 [Movie Watchlist](https://martinlrmr-movie-watchlist.netlify.app)
 
