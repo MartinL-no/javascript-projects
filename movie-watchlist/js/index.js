@@ -1,21 +1,19 @@
-
 const containerMovies = document.getElementById("container-movies")
 const containerWatchlist = document.getElementById("container-watchlist")
 const watchlistEl = document.getElementById("")
 const addWatchlist = document.getElementById("watchlist")
+const watchlistLength = document.getElementById("watchlist-length")
 let movieForm = document.getElementById("search")
 
 let watchlistArray = []
 
 window.onload = function() {
-    if (window.location.href.indexOf('index.html') > -1) {
-        fetchMovieList("<empty>")
-        if (!localStorage.getItem("array:")){
-            localStorage.setItem("array:", JSON.stringify(watchlistArray))
-        }
-    }   else if (localStorage.getItem("array:")) {
-        watchlistArray = JSON.parse(localStorage.getItem("array:"))
-        renderMovie(watchlistArray, containerWatchlist)
+    localStorage.getItem("array:")
+    watchlistArray = JSON.parse(localStorage.getItem("array:"))
+    if (watchlistArray === []) {
+        watchlistLength.textContent = `(${0})`
+    }   else {
+        watchlistLength.textContent = `(${watchlistArray.length})`
     }
 }
 
@@ -39,6 +37,7 @@ function renderMovie(data, container) {
             </p>
         </div>`
     }
+
     for (let movie of data) {
         fetch(`http://www.omdbapi.com/?apikey=c59f01a8&i=${movie.imdbID}`)
         .then(resolve => resolve.json() )
@@ -68,7 +67,10 @@ movieForm.addEventListener("submit", event => {
 })
 
 containerMovies.addEventListener('click', function(e){
-    watchlistArray = JSON.parse(localStorage.getItem("array:"))
-    watchlistArray.push({"imdbID": e.target.dataset.imdbid})
-    localStorage.setItem("array:", JSON.stringify(watchlistArray))
- })
+    if (event.target.classList.contains('watchlist')) { 
+        watchlistArray = JSON.parse(localStorage.getItem("array:"))
+        watchlistArray.push({"imdbID": e.target.dataset.imdbid})
+        watchlistLength.textContent = `(${watchlistArray.length})`
+        localStorage.setItem("array:", JSON.stringify(watchlistArray))
+    }
+})
