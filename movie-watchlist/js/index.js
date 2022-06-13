@@ -8,17 +8,17 @@ let movieForm = document.getElementById("search")
 let watchlistArray = []
 
 window.onload = function() {
-    localStorage.getItem("array:")
-    watchlistArray = JSON.parse(localStorage.getItem("array:"))
-    if (watchlistArray === []) {
+    if (localStorage.getItem("array") === null) {
+        localStorage.setItem("array", JSON.stringify(watchlistArray))
         watchlistLength.textContent = `(${0})`
-    }   else {
+    } else {
+        watchlistArray = JSON.parse(localStorage.getItem("array"))
         watchlistLength.textContent = `(${watchlistArray.length})`
     }
 }
 
 function fetchMovieList(id) {
-    fetch(`http://www.omdbapi.com/?apikey=c59f01a8&s=${id}`)
+    fetch(`https://www.omdbapi.com/?apikey=c59f01a8&s=${id}`)
     .then(resolve => resolve.json() )
     .then(data => {
         renderMovie(data.Search, containerMovies)
@@ -39,7 +39,7 @@ function renderMovie(data, container) {
     }
 
     for (let movie of data) {
-        fetch(`http://www.omdbapi.com/?apikey=c59f01a8&i=${movie.imdbID}`)
+        fetch(`https://www.omdbapi.com/?apikey=c59f01a8&i=${movie.imdbID}`)
         .then(resolve => resolve.json() )
         .then( movie => {
             container.innerHTML += `
@@ -67,10 +67,9 @@ movieForm.addEventListener("submit", event => {
 })
 
 containerMovies.addEventListener('click', function(e){
-    if (event.target.classList.contains('watchlist')) { 
-        watchlistArray = JSON.parse(localStorage.getItem("array:"))
+    if (e.target.classList.contains('watchlist')) { 
         watchlistArray.push({"imdbID": e.target.dataset.imdbid})
         watchlistLength.textContent = `(${watchlistArray.length})`
-        localStorage.setItem("array:", JSON.stringify(watchlistArray))
+        localStorage.setItem("array", JSON.stringify(watchlistArray))
     }
 })
