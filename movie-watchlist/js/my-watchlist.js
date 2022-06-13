@@ -3,19 +3,19 @@ const containerMovies = document.getElementById("container-movies")
 const containerWatchlist = document.getElementById("container-watchlist")
 const watchlistEl = document.getElementById("")
 const addWatchlist = document.getElementById("watchlist")
+const watchlistLength = document.getElementById("watchlist-length")
 let movieForm = document.getElementById("search")
 
 let watchlistArray = []
 
 window.onload = function() {
-    if (window.location.href.indexOf('index.html') > -1) {
-        fetchMovieList("<empty>")
-        if (!localStorage.getItem("array:")){
-            localStorage.setItem("array:", JSON.stringify(watchlistArray))
-        }
-    }   else if (localStorage.getItem("array:")) {
-        watchlistArray = JSON.parse(localStorage.getItem("array:"))
-        renderMovie(watchlistArray, containerWatchlist)
+    localStorage.getItem("array:")
+    watchlistArray = JSON.parse(localStorage.getItem("array:"))
+    renderMovie(watchlistArray, containerWatchlist)
+    if (watchlistArray === []) {
+        watchlistLength.textContent = `(${0})`
+    }   else {
+        watchlistLength.textContent = `(${watchlistArray.length})`
     }
 }
 
@@ -58,9 +58,13 @@ movieForm.addEventListener("submit", event => {
 })
 
 containerWatchlist.addEventListener('click', function(e){
-    watchlistArray = JSON.parse(localStorage.getItem("array:"))
-    const itemToRemove = watchlistArray.findIndex(num => num.imdbID === e.target.dataset.imdbid)
-    watchlistArray.splice(itemToRemove, 1)
-    localStorage.setItem("array:", JSON.stringify(watchlistArray))
-    renderMovie(watchlistArray, containerWatchlist)
+    if (event.target.classList.contains('watchlist')) { 
+        watchlistArray = JSON.parse(localStorage.getItem("array:"))
+        const itemToRemove = watchlistArray.findIndex(num => num.imdbID === e.target.dataset.imdbid)
+        watchlistArray.splice(itemToRemove, 1)
+        localStorage.setItem("array:", JSON.stringify(watchlistArray))
+        watchlistLength.textContent = `(${watchlistArray.length})`
+        renderMovie(watchlistArray, containerWatchlist)
+    }
+    
  })
