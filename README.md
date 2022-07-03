@@ -1,6 +1,6 @@
 # JavaScript Projects
 
-A collection of personal projects I built while completing the [Scrimba Front-End Developer Path](https://scrimba.com/learn/frontend).
+A collection of personal projects I built using JavaScript, HTML, CSS and external API calls
 
 ### [Movie Watchlist](https://martinlrmr-movie-watchlist.netlify.app)
 
