@@ -1,15 +1,17 @@
-# javascript-projects
+# JavaScript Projects
 
-A collection of projects I built using vanilla Javascript
+A collection of personal projects I built while completing the [Scrimba Front-End Developer Path](https://scrimba.com/learn/frontend).
 
-[Movie Watchlist](https://martinlrmr-movie-watchlist.netlify.app)
+It contains over 70 hours of top-notch tutorials, hundreds of coding challenges, and dozens of real-world projects.
 
-[Sample Portfolio Site](https://martinlrmr-sample-portfolio-site.netlify.app/)
+### [Movie Watchlist](https://martinlrmr-movie-watchlist.netlify.app)
 
-[Color Scheme Generator](https://martinlrmr-color-scheme-generator.netlify.app/)
+### [Sample Portfolio Site](https://martinlrmr-sample-portfolio-site.netlify.app/)
 
-[Invoice Generator](https://martinlrmr-invoice-generator.netlify.app/)
+### [Color Scheme Generator](https://martinlrmr-color-scheme-generator.netlify.app/)
 
-[Password Generator](https://martinlrmr-password-generator.netlify.app/)
+### [Invoice Generator](https://martinlrmr-invoice-generator.netlify.app/)
 
-[Unit Conversion](https://martinlrmr-unit-conversion.netlify.app/)
+### [Password Generator](https://martinlrmr-password-generator.netlify.app/)
+
+### [Unit Conversion](https://martinlrmr-unit-conversion.netlify.app/)
