@@ -31,20 +31,8 @@ pwdBox.onclick = function() {
 
 pwdBox.addEventListener("copy", function(event) {
   event.preventDefault();
-  if (event.clipboardData) {
+  if (event.target.textContent) {
     event.clipboardData.setData("text/plain", event.target.textContent);
     alert("You copied the password")
   }
 })
-
-function copyPwd() {
-/* Select the text field */
-pwdOne.select();
-pwdOne.setSelectionRange(0, 99999); /* For mobile devices */
-
-/* Copy the text inside the text field */
- navigator.clipboard.writeText(pwdOne.value);
-
- /* Alert the copied text */
- alert("Copied the text: " + pwdOne.value);
- }
