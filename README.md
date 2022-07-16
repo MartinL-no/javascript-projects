@@ -1,14 +1,15 @@
-# vanilla-js-projects
-A collection of projects I built using vanilla Javascript
+# JavaScript Projects
 
-[Movie Watchlist](https://martinlrmr-movie-watchlist.netlify.app)
+A collection of personal projects I built using JavaScript, HTML, CSS and external API calls
 
-[Sample Portfolio Site](https://martinlrmr-sample-portfolio-site.netlify.app/)
+### [Movie Watchlist](https://martinlrmr-movie-watchlist.netlify.app)
 
-[Color Scheme Generator](https://martinlrmr-color-scheme-generator.netlify.app/)
+### [Sample Portfolio Site](https://martinlrmr-sample-portfolio-site.netlify.app/)
 
-[Invoice Generator](https://martinlrmr-invoice-generator.netlify.app/)
+### [Color Scheme Generator](https://martinlrmr-color-scheme-generator.netlify.app/)
 
-[Password Generator](https://martinlrmr-password-generator.netlify.app/)
+### [Invoice Generator](https://martinlrmr-invoice-generator.netlify.app/)
 
-[Unit Conversion](https://martinlrmr-unit-conversion.netlify.app/)
+### [Password Generator](https://martinlrmr-password-generator.netlify.app/)
+
+### [Unit Conversion](https://martinlrmr-unit-conversion.netlify.app/)
