@@ -1,4 +1,4 @@
-# Reddit Timer <br />
+#  Unit Convertor <br />
 
 ## Overview
 
