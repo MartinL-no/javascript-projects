@@ -4,13 +4,14 @@
 
 I created this application as an assignment for the [Scrimba Front End Developer Career Path](https://scrimba.com/learn/frontend).
 
-I was provided a [Figma](https://figma.com/) design and had to complete the task myself based on skills developed in the course using only HTML, CSS and JavaScript.
+I was provided a [Figma](https://figma.com/) design and had to complete the task myself based on skills developed in the course using HTML, CSS and JavaScript.
 
 From working on the project I learnt about things such as -
 
 - **Querying REST API's using JavaScript Fetch/promises**
 - **Working with HTML select and color picker elements**
 - **Adding classes to HTML elements using the event object in JavaScript**
+- **CSS Flexbox**
 - **Importing and using CSS libraries**
 
 #### [LIVE LINK](https://martinlrmr-color-scheme-generator.netlify.app/) <br /><br />
@@ -27,6 +28,6 @@ From working on the project I learnt about things such as -
 
 ## Tech Used / Dependencies
 
-- [Animate.css]https://animate.style/ CSS animation library
+- [Animate.css](https://animate.style/) CSS animation library
 
 - Fonts from [Google Fonts](https://fonts.google.com/) <br /><br />
