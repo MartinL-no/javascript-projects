@@ -26,6 +26,7 @@ From working on the project I learnt about things such as -
 
 - Hex value of each individual color can be copied to the clipboard by clicking the value, which activates a CSS animation of the text and alerts the user that they have copied it
 
+
 ## Tech Used / Dependencies
 
 - [Animate.css](https://animate.style/) CSS animation library
