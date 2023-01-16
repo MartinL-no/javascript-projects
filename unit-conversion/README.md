@@ -1,23 +1,28 @@
-Unit Conversion Webapp Project
+# Reddit Timer <br />
 
-Objectives
-- Recreate webapp based on prototype given as Figma design
-- Save number to a variable in code
-- Round numbers to 3 decimal places
-- Give top of page CSS gradient 
-- BONUS TASK - Add ability for user input to change the number and automatically recalculate values when it changes
+## Overview
 
-Things I Learnt From This Project
-- Adding gradients in CSS
-- Matching layout to Figma prototpye
-- Adding external fonts
-- How to round up numbers in Javascript
-- Styling input fields and buttons
-- Styling tricks like autoselecting field on loadup and removing arrows from edge of input box
-- Extracting values/numbers from input fields and feeding them into Javascript functions
-- What event triggers are and how to add/use them with input fields
-- How to work out problems myself and find awnswers through the internet
+I created this application as an assignment for the [Scrimba Front End Developer Career Path](https://scrimba.com/learn/frontend).
 
-Hardest Parts Of This Project
-- Working out how to bring field inputs into function after page load
-- Troubleshooting why I was getting NaN in HTML output after first calculation
+I was provided a [Figma](https://figma.com/) design and had to complete the task myself based on skills developed in the course using only HTML, CSS and JavaScript.
+
+From working on the project I learnt about things such as -
+
+- **Recreating CSS styling of an application from Figma designs**
+- **Extracting values/numbers from input fields and feeding them into Javascript functions**
+- **Event triggers and how to use them with input fields**
+- **Styling input fields and buttons**
+- **Autoselecting fields on loadup**
+- **Adding gradients in CSS**
+- **Adding external fonts**
+- **How to work out problems myself and find answers through the internet**
+
+#### LIVE LINK : https://martinlrmr-unit-conversion.netlify.app <br /><br />
+
+## Features
+
+- The app consist of one page
+
+- Allows users to convert between various metric and imperial units
+
+- Round output units to 3 decimal places
