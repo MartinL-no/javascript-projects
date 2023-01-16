@@ -26,3 +26,7 @@ From working on the project I learnt about things such as -
 - Allows users to convert between various metric and imperial units
 
 - Round output units to 3 decimal places
+
+## Tech Used / Dependencies
+
+- Fonts from [Google Fonts](https://fonts.google.com/) <br /><br />
