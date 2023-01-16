@@ -20,7 +20,7 @@ For the project I choose to use React, React Router, Styled-Components and React
 The code reviews gave me an insight into a lot of best practices to follow and how to work at a prefessional standard
 
 
-#### LIVE LINK : https://martinlrmr-reddit-timer.netlify.app/ <br /><br />
+#### [LIVE LINK](https://martinlrmr-reddit-timer.netlify.app/) <br /><br />
 
 ## Features
 
